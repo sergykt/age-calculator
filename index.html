@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Age calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <form class="calculator__form">
+        <div class="calculator__form-group">
+          <label for="day" class="calculator__label">DAY</label>
+          <input type="text" class="calculator__input" id="day" name="day" placeholder="DD">
+          <div class="calculator__invalid-feedback"></div>
+        </div>
+        <div class="calculator__form-group">
+          <label for="month" class="calculator__label">MONTH</label>
+          <input type="text" class="calculator__input" id="month" name="month" placeholder="MM">
+          <div class="calculator__invalid-feedback"></div>
+        </div>
+        <div class="calculator__form-group">
+          <label for="year" class="calculator__label">YEAR</label>
+          <input type="text" class="calculator__input" id="year" name="year" placeholder="YYYY">
+          <div class="calculator__invalid-feedback"></div>
+        </div>
+        <div class="calculator__form-group">
+          <button type="submit" class="calculator__form-button">
+            <img src="assets/images/icon-arrow.svg" alt="submit">
+          </button>
+        </div>
+      </form>
+      <div class="calculator__result">
+        <div class="calculator__result-item">
+          <span class="calculator__result-item_number" id="result-years">--</span> years
+        </div>
+        <div class="calculator__result-item">
+          <span class="calculator__result-item_number" id="result-months">--</span> months
+        </div>
+        <div class="calculator__result-item">
+          <span class="calculator__result-item_number" id="result-days">--</span> days
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js" defer></script>
+</body>
+</html>
